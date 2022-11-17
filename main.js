@@ -23,16 +23,14 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                for(let i=0; i< myArrNum1.length;i++){
-                    if(myArrNum1[i] === num){
-                        elemento.style.backgroundColor="red";
-                        alert("GAME OVER! Hai cliccato una bomba. Clicca OK per iniziare una nuova partita")
-                        location.reload();
-                    }
-                
+                for(let b=0; b < myArrNum1.length; b++){
+                     if(myArrNum1[b] === num){
+                         elemento.classList.add("bomba");
+                         let over=document.getElementById("over");
+                         over.innerHTML="GAME OVER";
+                     }     
+                 
                 }
-              
-                
              }
              
             );
@@ -53,11 +51,11 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                for(let i=0; i< myArrNum2.length;i++){
-                    if(myArrNum2[i] === num){
-                        elemento.style.backgroundColor="red";
-                        alert("GAME OVER! Hai cliccato una bomba. Clicca OK per iniziare una nuova partita")
-                        location.reload();
+                for(let b=0; b< myArrNum2.length;b++){
+                    if(myArrNum2[b] === num){
+                        elemento.classList.add("bomba");
+                        let over=document.getElementById("over");
+                        over.innerHTML="GAME OVER";
                     }
                 
                 }
@@ -82,11 +80,11 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                for(let i=0; i< myArrNum3.length;i++){
-                    if(myArrNum3[i] === num){
-                        elemento.style.backgroundColor="red";
-                        alert("GAME OVER! Hai cliccato una bomba. Clicca OK per iniziare una nuova partita")
-                        location.reload();
+                for(let b=0; b< myArrNum3.length;b++){
+                    if(myArrNum3[b] === num){
+                        elemento.classList.add("bomba");
+                         let over=document.getElementById("over");
+                         over.innerHTML="GAME OVER";
                     }
                 
                 }
