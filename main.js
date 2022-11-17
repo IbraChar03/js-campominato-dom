@@ -24,7 +24,7 @@ let button = document.getElementById("btn");
             container.append(elemento);
              
             elemento.addEventListener("click",
-             function(){
+             function () {
                 
                 for(let b = 0; b < myArrNum1.length; b++){
                     if(myArrNum1.includes(num)){
@@ -39,16 +39,24 @@ let button = document.getElementById("btn");
                 if(!myArrNum1.includes(num)){
                     count++;
                     let over = document.getElementById("over");
-                    over.innerHTML=`Il tuo punteggio è di ${count} punti`;
+                    over.innerHTML = `Il tuo punteggio è di ${count} punti`;
+                  
                 }
                 if(myArrNum1.includes(num)){  
                     let over = document.getElementById("over");
-                    over.innerHTML=`GAME OVER! Il tuo punteggio è di ${count} punti`;
+                    over.innerHTML = `GAME OVER! Il tuo punteggio è di ${count} punti`;
+                    
                 }
+                if(count == 84){
+                    let over = document.getElementById("over");
+                    over.innerHTML = `Complimenti hai vinto totalizzando ${count} punti!`;
+                }
+
 
              }
              
             );
+         
                  
         }  
       
@@ -57,7 +65,7 @@ let button = document.getElementById("btn");
     else if (difficolta === "Medio"){
         document.getElementById("over").innerHTML = "";
         document.getElementById("container").innerHTML = "";
-        const myArrNum2 = genArr(16, 1, 100);
+        const myArrNum2 = genArr(16, 1, 81);
         console.log(myArrNum2);
         for(let i = 1; i <= 81; i++ ){
             let elemento = nuovoElemento();
@@ -80,11 +88,15 @@ let button = document.getElementById("btn");
                 if(!myArrNum2.includes(num)){
                     count++;
                     let over = document.getElementById("over");
-                    over.innerHTML=`Il tuo punteggio è di ${count} punti`;
+                    over.innerHTML = `Il tuo punteggio è di ${count} punti`;
                 }
                 if(myArrNum2.includes(num)){  
                     let over = document.getElementById("over");
-                    over.innerHTML=`GAME OVER! Il tuo punteggio è di ${count} punti`;
+                    over.innerHTML = `GAME OVER! Il tuo punteggio è di ${count} punti`;
+                }
+                if(count == 65){
+                    let over = document.getElementById("over");
+                    over.innerHTML = `Complimenti hai vinto totalizzando ${count} punti!`;
                 }
 
              }
@@ -98,7 +110,7 @@ let button = document.getElementById("btn");
     else if (difficolta === "Difficile"){
         document.getElementById("over").innerHTML = "";
         document.getElementById("container").innerHTML = "";
-        const myArrNum3 = genArr(16, 1, 100);
+        const myArrNum3 = genArr(16, 1, 49);
         console.log(myArrNum3);
         for(let i = 1; i <= 49; i++ ){
             let elemento = nuovoElemento();
@@ -126,7 +138,14 @@ let button = document.getElementById("btn");
                 }
                 if(myArrNum3.includes(num)){  
                     let over = document.getElementById("over");
-                    over.innerHTML=`GAME OVER! Il tuo punteggio è di ${count} punti`;
+                    over.innerHTML = `GAME OVER! Il tuo punteggio è di ${count} punti`;
+                   
+                   
+                }
+
+                if(count == 33){
+                    let over = document.getElementById("over");
+                    over.innerHTML = `Complimenti hai vinto totalizzando ${count} punti!`;
                 }
 
              }
