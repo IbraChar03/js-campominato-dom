@@ -34,25 +34,22 @@ let button = document.getElementById("btn");
                     else if (!myArrNum1.includes(num)){        
                         elemento.classList.add("notBomba");
                     }
-                   
-                 
+                         
                 }
                 if(!myArrNum1.includes(num)){
                     count++;
-                    let over=document.getElementById("over");
-                    over.innerHTML=`il tuo punteggio è di ${count} punti`;
+                    let over = document.getElementById("over");
+                    over.innerHTML=`Il tuo punteggio è di ${count} punti`;
                 }
                 if(myArrNum1.includes(num)){  
-                    let over=document.getElementById("over");
-                    over.innerHTML=`GAME OVER! il tuo punteggio è di ${count} punti`;
+                    let over = document.getElementById("over");
+                    over.innerHTML=`GAME OVER! Il tuo punteggio è di ${count} punti`;
                 }
 
-        
              }
              
             );
-            
-            
+                 
         }  
       
     }
@@ -78,19 +75,17 @@ let button = document.getElementById("btn");
                     else if (!myArrNum2.includes(num)){        
                         elemento.classList.add("notBomba");
                     }
-                   
-                 
+                               
                 }
                 if(!myArrNum2.includes(num)){
                     count++;
-                    let over=document.getElementById("over");
-                    over.innerHTML=`il tuo punteggio è di ${count} punti`;
+                    let over = document.getElementById("over");
+                    over.innerHTML=`Il tuo punteggio è di ${count} punti`;
                 }
                 if(myArrNum2.includes(num)){  
-                    let over=document.getElementById("over");
-                    over.innerHTML=`GAME OVER! il tuo punteggio è di ${count} punti`;
+                    let over = document.getElementById("over");
+                    over.innerHTML=`GAME OVER! Il tuo punteggio è di ${count} punti`;
                 }
-
 
              }
             
@@ -126,12 +121,12 @@ let button = document.getElementById("btn");
                 }
                 if(!myArrNum3.includes(num)){
                     count++;
-                    let over=document.getElementById("over");
-                    over.innerHTML=`il tuo punteggio è di ${count} punti`;
+                    let over = document.getElementById("over");
+                    over.innerHTML=`Il tuo punteggio è di ${count} punti`;
                 }
                 if(myArrNum3.includes(num)){  
-                    let over=document.getElementById("over");
-                    over.innerHTML=`GAME OVER! il tuo punteggio è di ${count} punti`;
+                    let over = document.getElementById("over");
+                    over.innerHTML=`GAME OVER! Il tuo punteggio è di ${count} punti`;
                 }
 
              }
@@ -158,10 +153,10 @@ function randomInteger(min, max){
 
 function genArr(quanti, minNum, maxNum){
 
-    const newArr=[];
+    const newArr = [];
 
     while(newArr.length < quanti){
-        let newNumber=randomInteger(minNum, maxNum);
+        let newNumber = randomInteger(minNum, maxNum);
 
         if(!newArr.includes(newNumber)){
             newArr.push(newNumber);
@@ -169,3 +164,4 @@ function genArr(quanti, minNum, maxNum){
     }
     return newArr;
 }
+
