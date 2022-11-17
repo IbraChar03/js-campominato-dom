@@ -5,10 +5,7 @@ let button = document.getElementById("btn");
     let difficolta = document.getElementById("diff").value;
     let main = document.querySelector("main")
     main.style.backgroundColor = "#D6E4E5";
-
     let container = document.getElementById("container");
-    const myArrNum2 = genArr(16, 1, 81);
-    const myArrNum3 = genArr(16, 1, 49);
     let count=0;
    
 
@@ -40,12 +37,13 @@ let button = document.getElementById("btn");
                     over.innerHTML = `Il tuo punteggio è di ${count} punti`;
                   
                 }
-                if(myArrNum1.includes(num)){  
+                if(myArrNum1.includes(num) ){  
                     let over = document.getElementById("over");
                     over.innerHTML = `GAME OVER! Il tuo punteggio è di ${count} punti`;
                    
                     
                 }
+
                 if(count == 84){
                     let over = document.getElementById("over");
                     over.innerHTML = `Complimenti hai vinto totalizzando ${count} punti!`;
