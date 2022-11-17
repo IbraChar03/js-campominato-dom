@@ -25,16 +25,14 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function () {
-                
-                for(let b = 0; b < myArrNum1.length; b++){
+               
                     if(myArrNum1.includes(num)){
                          elemento.classList.add("bomba");
                         
                     }   
                     else if (!myArrNum1.includes(num)){        
                         elemento.classList.add("notBomba");
-                    }
-                         
+             
                 }
                 if(!myArrNum1.includes(num)){
                     count++;
@@ -45,6 +43,7 @@ let button = document.getElementById("btn");
                 if(myArrNum1.includes(num)){  
                     let over = document.getElementById("over");
                     over.innerHTML = `GAME OVER! Il tuo punteggio è di ${count} punti`;
+                   
                     
                 }
                 if(count == 84){
@@ -75,7 +74,7 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                for(let b = 0; b < myArrNum2.length; b++){
+               
                     if(myArrNum2.includes(num)){
                          elemento.classList.add("bomba");
                         
@@ -84,7 +83,7 @@ let button = document.getElementById("btn");
                         elemento.classList.add("notBomba");
                     }
                                
-                }
+             
                 if(!myArrNum2.includes(num)){
                     count++;
                     let over = document.getElementById("over");
@@ -120,7 +119,7 @@ let button = document.getElementById("btn");
              
             elemento.addEventListener("click",
              function(){
-                for(let b = 0; b < myArrNum3.length; b++){
+            
                     if(myArrNum3.includes(num)){
                          elemento.classList.add("bomba");
                         
@@ -128,9 +127,7 @@ let button = document.getElementById("btn");
                     else if (!myArrNum3.includes(num)){        
                         elemento.classList.add("notBomba");
                     }
-                   
-                 
-                }
+
                 if(!myArrNum3.includes(num)){
                     count++;
                     let over = document.getElementById("over");
