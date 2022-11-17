@@ -13,6 +13,7 @@ let button = document.getElementById("btn");
    
 
     if (difficolta === "Facile"){
+        document.getElementById("over").innerHTML = "";
         document.getElementById("container").innerHTML = "";
         const myArrNum1 = genArr(16, 1, 100);
         console.log(myArrNum1);
@@ -57,6 +58,7 @@ let button = document.getElementById("btn");
     }
     
     else if (difficolta === "Medio"){
+        document.getElementById("over").innerHTML = "";
         document.getElementById("container").innerHTML = "";
         const myArrNum2 = genArr(16, 1, 100);
         console.log(myArrNum2);
@@ -99,6 +101,7 @@ let button = document.getElementById("btn");
     }
 
     else if (difficolta === "Difficile"){
+        document.getElementById("over").innerHTML = "";
         document.getElementById("container").innerHTML = "";
         const myArrNum3 = genArr(16, 1, 100);
         console.log(myArrNum3);
